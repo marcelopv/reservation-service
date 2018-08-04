@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/reservation
+    username: reservation_user
+    password: 12345
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+    generate-ddl: true
+    hibernate.ddl-auto: update
+    properties.hibernate.jdbc.lob.non_contextual_creation: true
